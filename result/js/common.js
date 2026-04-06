@@ -1,6 +1,6 @@
 jQuery(document).ready(function( $ ) {
 
-  
+
 
   $('body').click(function () {
     if( $(".toggle-mnu").hasClass("on") ){
@@ -24,35 +24,25 @@ jQuery(document).ready(function( $ ) {
 
 
   $('.carret').click(function () {
-    
+
     $(this).closest('.parent').find('ul').toggleClass('show');
   });
 
 
-  $('.gal__slider').slick({
-    infinite: false,    
-    speed: 600,
+  $('.content__sl').slick({
+    infinite: true,    
+    speed: 300,
     slidesToScroll: 1,
     autoplay: false,    
     slidesToShow: 1,
     cssEase: 'linear',  
-    autoplaySpeed: 0,  
-    touchThreshold: 10,
+    autoplaySpeed: 0,      
     arrows: true,
+    dots: true,
     pauseOnHover: true,  
   });
 
-  let currentSlide = $('.gal__slider').slick('slickCurrentSlide') + 1;
-  const slideCount = $(".gal__slider").slick("getSlick").slideCount;
-
-
-  $(".gal__slider").on("afterChange", function(event, slick, currentSlide, nextSlide){
-    $(".gal__actions span").text(currentSlide + 1);
-  });
-
-
-  $('.gal__actions span').html(currentSlide);
-  $('.gal__actions div').html(slideCount);
+  
 
 
 /************************************/
@@ -126,24 +116,10 @@ jQuery(document).ready(function( $ ) {
     });
   }
 
-  $('.accordion-header').toggleClass('inactive-header');
-  $('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
-  $('.accordion-content').first().slideDown().toggleClass('open-content');
-  $('.accordioon-content').first().slideDown().toggleClass('open-content');
-  $('.accordion-header').click(function () {
-    if($(this).is('.inactive-header')) {
-      $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
-      $(this).toggleClass('active-header').toggleClass('inactive-header');
-      $(this).next().slideToggle().toggleClass('open-content');
-    }
-
-    else {
-      $(this).toggleClass('active-header').toggleClass('inactive-header');
-      $(this).next().slideToggle().toggleClass('open-content');
-    }
+  $('.accordion-item').click(function () {
+    $(this).find('.accordion-header').toggleClass('active-header');
+    $(this).find('.accordion-content').slideToggle().toggleClass('open-content');
   });
-
-  return false;
 
 }); //ready
 

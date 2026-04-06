@@ -84,7 +84,7 @@
     padding: 20px 0;
     transition: 0.5s;
     height: 100vh;
-    margin-top: 89px;
+    margin-top: 87px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,6 +194,10 @@
   .servs__top {
     min-height: unset;
   }
+  .banner__text {
+    max-width: 100%;
+    font-size: 54px;
+  }
 }//1199
 
 
@@ -230,9 +234,15 @@
   .section {
     padding-top: 45px;
   }
-  .map__l input[type="submit"],
-  .map__l input[type="email"], .map__l input[type="tel"], .map__l input[type="password"], .map__l input[type="text"] {
+  input[type="submit"],
+  input[type="email"], 
+  input[type="tel"], 
+  input[type="password"], 
+  input[type="text"] {
     height: 45px;
+  }
+  .banner__text {
+    font-size: 44px;
   }
 }//991
 
@@ -267,6 +277,9 @@
   .s-about__l {
     width: 100%;
   }
+  .banner__text {
+    font-size: 40px;
+  }
 }//767
 
 @media (max-width : 640px) {
@@ -280,6 +293,9 @@
   .block__title {
     font-size: 20px;
   }
+  .banner__text {
+    font-size: 33px;
+  }
 
 }//640
 
@@ -287,8 +303,9 @@
   .servs__top {    
     flex-direction: column;    
     align-items: flex-start;
-  }  
-}//480
+  } 
+  
+}//575
 
 @media (max-width : 480px) {
   .hero__content h1 {
