@@ -198,6 +198,16 @@
     max-width: 100%;
     font-size: 54px;
   }
+  .content__r form {    
+    flex-direction: column;
+    input,
+    button {
+      width: 100%;
+    } 
+  }
+  .content__l {
+    padding-right: 30px;
+  }
 }//1199
 
 
@@ -243,6 +253,42 @@
   }
   .banner__text {
     font-size: 44px;
+  }
+  .content__row {    
+    flex-direction: column;
+    gap: 25px;
+  }
+  .content__l {
+    padding-right: 0;
+  }
+  .content__r,
+  .content__l {
+    width: 100%;
+  }
+  .content__r {
+    padding-bottom: 0;
+    h2 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  }
+  .content__l ul li a {
+    gap: 10px;
+  }
+  .content__l ul li a {
+    font-size: 14px;
+  }
+  .content__l {
+    .h2 {
+      font-size: 22px;
+      min-height: unset;
+    }
+  } 
+  .accordion-header {
+    font-size: 19px;
   }
 }//991
 
