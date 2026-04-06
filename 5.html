@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5. Services</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html',{
+      "cls":""
+    })
+    <main class="main">     
+     <section class="s-services section">
+       <div class="contain">        
+        <div class="serv-page__row blocks__row">
+          @@include('var/_servs__item2.html',{
+            "img":"./img/servs-11.svg",
+            "title": "Heavy and Oversized Transports in Germany and Europe",
+            "image": "./img/servs-01.jpg",
+            "txt": "Transportation of oversized and project cargo in Germany, Europe, and worldwide. Oversized cargo transshipment in the port of Hamburg",
+            "delay": "100"
+          })
+          @@include('var/_servs__item2.html',{
+            "img":"./img/servs-22.svg",
+            "title": "Road Freight Germany",
+            "image": "./img/servs-02.jpg",
+            "txt": "International transportation of complete and consolidated cargo, containers, and oversized cargo in Germany, Europe, and Asia",
+            "delay": "100"
+          })
+          @@include('var/_servs__item2.html',{
+            "img":"./img/servs-33.svg",
+            "title": "Customs warehouse in Germany",
+            "image": "./img/servs-03.jpg",
+            "txt": "Container reloading, storage, processing, and consolidation of cargo in Germany. Storage and customs excise warehouse",
+            "delay": "300"
+          })
+          @@include('var/_servs__item2.html',{
+            "img":"./img/servs-44.svg",
+            "title": "Customs services in Germany",
+            "image": "./img/servs-04.jpg",
+            "txt": "Customs broker in Germany. Customs and fiscal clearance (import, export, transit)",
+            "delay": "300"
+          })
+          @@include('var/_servs__item2.html',{
+            "img":"./img/servs-55.svg",
+            "title": "Air cargo transportation",
+            "image": "./img/servs-05.jpg",
+            "txt": "Air freight of expensive, special, and urgent cargo from Germany and other European countries",
+            "delay": "500"
+          })
+          @@include('var/_servs__item2.html',{
+            "img":"./img/servs-66.svg",
+            "title": "Worldwide shipping from Germany",
+            "image": "./img/servs-05.jpg",
+            "txt": "Sea transportation from and to Germany for containers (FCL), groupage (LCL) and oversized cargo",
+            "delay": "500"
+          })
+          @@include('var/_servs__item2.html',{
+            "img":"./img/servs-77.svg",
+            "title": "Fulfillment (FBA) in Germany",
+            "image": "./img/servs-07.jpg",
+            "txt": "FBA (Fulfillment for Amazon), FBM, 3PL and 4PL logistics in Germany and the European Union",
+            "delay": "100"
+          })
+          
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  @@include('var/_footer.html')    
+</div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
