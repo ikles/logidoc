@@ -63,6 +63,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   color: #004539;
+  margin-bottom: 1.5rem;
 }
 
 .p16 {
@@ -156,13 +157,19 @@ p {
 
 
 .top__row {
-  display: flex;
-  gap: 20px;
+  display: flex;  
+  align-items: center;
 }
 
 .head__l {
   display: flex;
   gap: 55px;
+  align-items: center;
+}
+
+.header__col {
+  display: flex;  
+  flex-grow: 1;
   align-items: center;
 }
 
@@ -172,6 +179,7 @@ p {
   height: 34px;
   flex: 0 0 auto;
   align-items: center;
+  margin-right: 55px;
   img {
     max-width: 100%;
   }
@@ -199,14 +207,45 @@ p {
         &:hover {
           text-decoration: none;
         }
-        span {
+      }
+        span.carret {
+          display: inline-flex;
           margin-left: 8px;
-          width: 26px;
-          height: 20px;
+          width: 10px;
+          height: 15px;
           background-image: url("../img/arr-dw-mn-wh.svg");          
           background-repeat: no-repeat;
           background-position: center center;
           flex: 0 0 auto;
+        }
+      &.parent {
+        position: relative;    
+        text-align: left;    
+        ul {
+          position: absolute;
+          background-color: #FFF;          
+          flex-direction: column;                  
+          align-items: flex-start;
+          padding: 25px;
+          min-width: 250px;
+          opacity: 0;
+          visibility: hidden;
+          li {
+            a {
+              color: #000;
+            }
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        @media (any-hover: hover) {
+          &:hover {
+            ul {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
         }
       }
     }
@@ -219,6 +258,7 @@ p {
   background-position: center;
   width: 24px;
   height: 24px;
+  margin-left: 16px;
 }
 
 .head__r {
@@ -300,11 +340,11 @@ p {
     } 
     .top__mnu {
      li {
-       a {
-         color: #FFF;
-         span {
+         span.carret {
            background-image: url("../img/arr-dw-mn.svg");
          }
+       a {
+         color: #FFF;
        }
      }
    }
@@ -352,6 +392,9 @@ p {
     text-transform: uppercase;
     color: #ffa300;
     margin-bottom: 71px;
+    span {
+      display: inline-block;
+    }
     i {
       font-style: italic;
       color: #fff;
@@ -440,6 +483,7 @@ p {
 .servs__img {
   flex: 0 0 auto;
   display: inline-flex;
+  height: 39px;
   img {
     max-width: 100%;
     height: auto;
@@ -700,6 +744,10 @@ p {
   opacity: 0.7;
   font-family: 
   $ff2;
+}
+
+.burger {
+  display: none;
 }
 
 //2000
