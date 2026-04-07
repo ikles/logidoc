@@ -499,7 +499,8 @@ p {
       min-width: 250px;
       opacity: 0;
       visibility: hidden;
-      border-radius: 5px; }
+      border-radius: 5px;
+      z-index: 2; }
       @media (min-width: 1200px) {
         .top__mnu ul li.parent ul {
           box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.2); } }
@@ -954,7 +955,6 @@ input[type="submit"] {
 
 .banner {
   min-height: 397px;
-  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column; }

@@ -234,6 +234,7 @@ p {
           opacity: 0;
           visibility: hidden;          
           border-radius: 5px;
+          z-index: 2;
           @media (min-width : 1200px) {
             box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.2);          
           }
@@ -798,8 +799,7 @@ input[type="submit"] {
 }
 
 .banner {
-  min-height: 397px;
-  overflow: hidden;
+  min-height: 397px;  
   position: relative;
   display: flex;  
   flex-direction: column;
