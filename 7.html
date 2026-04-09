@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7. Service</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html',{
+      "cls":""
+    })
+    <main class="main">     
+      @@include('var/_banner.html',{  
+        "txt":"Prices",
+        "img":"./img/banner-7.jpg",
+        "bread":"<ul><li><a href=''>Main</a></li><li>Prices</li></ul>"
+      })
+      <section class=" section">
+        <div class="contain">
+          <div class="h3 prices__title">We are always readyto help you and answeryour questions</div>
+          <div class="prices__w">
+            <div class="prices__l">
+              <form class="prices__form-row">
+                <div class="prices__form-wrap">
+                  <input type="text" placeholder="First name">
+                  <input type="text" placeholder="Last name">
+                  <input type="text" placeholder="Email" required>
+                  <input type="text" placeholder="Phone" required>
+                </div>
+                <input type="submit" value="Submit">              
+              </form>
+            </div>
+
+            <div class="prices__r">              
+                <div class="h3 prices__title">Do you have <br> any questions?</div>
+                <div class="prices__call">Call us</div>
+                <a href="" class="prices__phone">+7 (342) 248-20-63</a>              
+            </div>
+
+          </div>
+        </div>          
+      </section>
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

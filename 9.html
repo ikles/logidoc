@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>9. Article</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html',{
+      "cls":""
+    })
+    <main class="main">     
+      @@include('var/_banner.html',{  
+        "txt":"Title Article",
+        "img":"./img/banner-9.jpg",
+        "bread":"<ul><li><a href=''>Main</a></li><li><a href=''>Blog</a></li><li>Title Article</li></ul>"
+      })
+      <section class="s-content section">
+       <div class="contain">
+        <div class="article__row">
+          <div class="article__l">
+            <div class="date__w">
+              <div class="date">17 May 2026</div>
+              <a href="" class="share__link">share</a>
+            </div>
+
+            @@include('var/_content-sl.html')
+            <h1 class="h1__title">H1 Title</h1>
+            <p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h2 class="h2__title">H2 Title</h2>
+            <h3 class="h3__title">H3 Title</h3>
+            
+            <blockquote>              
+              Lorem ipsum dolor sit amet consectetur. Sem risus lacus vel et accumsan lobortis sociis. Quis volutpat faucibus vehicula ante. Venenatis urna tortor dolor nisi eget et bibendum. Ultrices dolor cras nulla magna.
+            </blockquote>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          <div class="article__r">
+
+            <div class="h3 article__l-title">Other Posts</div>
+            <div class="article__item">
+              <div class="article__img"><img src="img/other-1.jpg"></div>
+              <div class="article__name-w">
+                <div class="article__date">17 May 2026</div>
+                <div class="h3">Title Article</div>
+              </div>
+            </div>
+            <div class="article__item">
+              <div class="article__img"><img src="img/other-2.jpg"></div>
+              <div class="article__name-w">
+                <div class="article__date">17 May 2026</div>
+                <div class="h3">Title Article</div>
+              </div>
+            </div>
+            <div class="article__item">
+              <div class="article__img"><img src="img/other-3.jpg"></div>
+              <div class="article__name-w">
+                <div class="article__date">17 May 2026</div>
+                <div class="h3">Title Article</div>
+              </div>
+            </div>
+            <div class="article__work">
+              <div class="h3">Do you want to work width us?</div>
+              <p class="">Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.</p>
+              <a href="" class="btn article__work-btn">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  @@include('var/_footer.html')    
+</div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
