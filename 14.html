@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>14. About us</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html',{
+      "cls":""
+    })
+    <main class="main">     
+      @@include('var/_banner.html',{  
+        "txt":"About us",
+        "img":"./img/banner-14.jpg",
+        "bread":"<ul><li><a href=''>Main</a></li><li>About us</li></ul>"
+      })
+      <section class="s-aboutp section">
+       <div class="contain">
+        <div class="h2">Lorem ipsum dolor sit amet <br>consectetur.
+        </div>
+        <div class="about__w">
+          <div class="about__item">
+            <div class="about__img"><img src="img/first-name.jpg"></div>
+            <div class="about__first">First name Last name</div>
+            <div class="about__ceo">CEO</div>
+          </div>
+          <div class="about__col">
+            <p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          <div class="about__col">
+            <p>Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          <a href="" class="about__col blocks__item">
+            <span class="block__title">Lorem ipsum dolor sit amet 
+            consectetur.</span>
+            <span class="relate__img">
+              <img src="./img/servs-01.jpg" alt="">
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur. Sem risus lacus vel et accumsan lobortis sociis. Quis volutpat faucibus vehicula ante. Venenatis urna tortor dolor nisi eget et bibendum. Ultrices dolor cras nulla magna.</p>
+          </a>
+          <a href="" class="about__col blocks__item">
+            <span class="block__title">Lorem ipsum dolor sit amet 
+            consectetur.</span>
+            <span class="relate__img">
+              <img src="./img/servs-02.jpg" alt="">
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur. Sem risus lacus vel et accumsan lobortis sociis. Quis volutpat faucibus vehicula ante. Venenatis urna tortor dolor nisi eget et bibendum. Ultrices dolor cras nulla magna.</p>
+          </a>
+          <a href="" class="about__col blocks__item">
+            <span class="block__title">Lorem ipsum dolor sit amet 
+            consectetur.</span>
+            <span class="relate__img">
+              <img src="./img/servs-03.jpg" alt="">
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur. Sem risus lacus vel et accumsan lobortis sociis. Quis volutpat faucibus vehicula ante. Venenatis urna tortor dolor nisi eget et bibendum. Ultrices dolor cras nulla magna.</p>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  @@include('var/_footer.html')    
+</div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

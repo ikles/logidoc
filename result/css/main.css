@@ -1536,6 +1536,55 @@ blockquote {
     width: 100%;
     height: 100%; }
 
+.about__w {
+  margin-top: 48px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; }
+
+.about__item {
+  width: calc(33.3333% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
+
+.about__img {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1.775 / 1; }
+  .about__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
+.about__first {
+  font-weight: 700;
+  font-size: 26px;
+  color: #004539;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.about__ceo {
+  font-size: 16px;
+  color: #004539;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; }
+
+.about__col {
+  width: calc(33.3333% - 20px); }
+  .about__col p:last-child {
+    margin-bottom: 0; }
+
+.relate__img {
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  aspect-ratio: 2.0476 / 1; }
+
 @media (max-width: 1725px) {
   .head__l {
     gap: 29px; }
