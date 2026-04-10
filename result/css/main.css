@@ -1322,18 +1322,18 @@ input[type="submit"] {
   text-decoration-skip-ink: none;
   color: #004539; }
 
-.article__l h1 {
+h1 {
   font-size: 32px; }
 
-.article__l h2 {
+h2 {
   font-size: 26px; }
 
-.article__l h3 {
+h3 {
   font-size: 22px; }
 
-.article__l h1,
-.article__l h2,
-.article__l h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
   color: #004539;
   margin-bottom: 20px;
@@ -1408,6 +1408,105 @@ blockquote {
   padding-left: 47px;
   padding-right: 47px;
   flex: 0 0 auto; }
+
+.key ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px; }
+  .key ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #004539;
+    position: relative;
+    padding-left: 15px; }
+    .key ul li:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      background-color: #004539; }
+
+.key__cont {
+  display: flex;
+  margin-bottom: 20px; }
+
+.cont__w {
+  margin-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px; }
+
+.cont__title {
+  border: 1px solid rgba(0, 69, 57, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  width: calc(50% - 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+
+.cont__country {
+  display: flex;
+  align-items: center; }
+
+.cont__count-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto; }
+
+.cont__count-name {
+  font-weight: 700;
+  font-size: 24px;
+  color: #004539;
+  margin-left: 16px; }
+
+.cont__add {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; }
+
+.cont__add-row {
+  display: flex;
+  align-items: center;
+  background-position: left center;
+  background-repeat: no-repeat;
+  min-height: 24px;
+  padding-left: 35px; }
+  .cont__add-row._geo {
+    background-image: url("../img/cont-item-1.svg"); }
+  .cont__add-row._mail {
+    background-image: url("../img/cont-item-2.svg"); }
+  .cont__add-row._phone {
+    background-image: url("../img/cont-item-3.svg"); }
+  .cont__add-row p, .cont__add-row a {
+    font-size: 16px;
+    color: #004539;
+    margin-bottom: 0; }
+
+.cont__txt {
+  max-width: 50%;
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #004539;
+  margin-top: 45px;
+  margin-bottom: 45px; }
+
+.cont__form form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px; }
+  .cont__form form input, .cont__form form button {
+    width: calc(20% - 8px); }
 
 @media (max-width: 1725px) {
   .head__l {
