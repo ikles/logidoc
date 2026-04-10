@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12. Contact</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html',{
+      "cls":""
+    })
+    <main class="main">     
+      @@include('var/_banner.html',{  
+        "txt":"Gallery",
+        "img":"./img/banner-13.jpg",
+        "bread":"<ul><li><a href=''>Main</a></li><li>Gallery</li></ul>"
+      })
+      <section class="s-gal section">
+       <div class="contain">
+        <div class="gal__controls">
+          <ul>
+            <li><a class="active" href="">All</a></li>
+            <li><a href="">Transport</a></li>
+            <li><a href="">Train</a></li>
+            <li><a href="">Air</a></li>
+          </ul>
+        </div>
+        <div class="blocks__row gal__row">
+          <a data-fancybox="gal-1" href="./img/gal-1.jpg" class="blocks__item">
+            <div  class="gal__img">
+              <img src="./img/gal-1.jpg" alt="">
+            </div>
+            <div class="block__title">Photo title </div>
+          </a>
+          <a data-fancybox="gal-1" href="./img/gal-2.jpg" class="blocks__item">
+            <div  class="gal__img">
+              <img src="./img/gal-2.jpg" alt="">
+            </div>
+            <div class="block__title">Photo title </div>
+          </a>
+          <a data-fancybox="gal-1" href="./img/gal-3.jpg" class="blocks__item">
+            <div  class="gal__img">
+              <img src="./img/gal-3.jpg" alt="">
+            </div>
+            <div class="block__title">Photo title </div>
+          </a>
+          <a data-fancybox="gal-1" href="./img/gal-4.jpg" class="blocks__item">
+            <div  class="gal__img">
+              <img src="./img/gal-4.jpg" alt="">
+            </div>
+            <div class="block__title">Photo title </div>
+          </a>
+          <a data-fancybox="gal-1" href="./img/gal-5.jpg" class="blocks__item">
+            <div  class="gal__img">
+              <img src="./img/gal-5.jpg" alt="">
+            </div>
+            <div class="block__title">Photo title </div>
+          </a>
+          <a data-fancybox="gal-1" href="./img/gal-6.jpg" class="blocks__item">
+            <div  class="gal__img">
+              <img src="./img/gal-6.jpg" alt="">
+            </div>
+            <div class="block__title">Photo title </div>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  @@include('var/_footer.html')    
+</div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
