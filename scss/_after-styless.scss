@@ -208,6 +208,32 @@
   .content__l {
     padding-right: 30px;
   }
+  .article__row {
+    .article__l {
+      width: calc(100% - 300px);
+    }
+    .article__r {
+      width: 300px;
+    }
+  }
+  .article__img {
+    width: 80px;
+    height: 80px;
+  }
+  .article__item {
+    .h3 {
+      font-size: 20px;
+    }
+  }
+  .cont__w {
+    margin-top: 0;
+  }
+  .about__item {
+    width: 100%;
+  }
+  .about__col {
+    width: calc(50% - 15px);
+  }
 }//1199
 
 
@@ -290,6 +316,45 @@
   .accordion-header {
     font-size: 19px;
   }
+  .prices__w {    
+    flex-direction: column;
+    gap: 30px;
+  }
+  .prices__l,
+  .prices__r {
+    width: 100%;
+  }
+  .prices__phone {
+    font-size: 25px;
+  }
+  .prices__r {
+    .h3 {
+      font-size: 22px;
+    }
+  }
+  .prices__title {
+    margin-bottom: 26px;
+  }
+  .article__row {    
+    flex-direction: column;
+    .article__r {
+      width: 100%;
+    }
+    .article__l {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  .article-r__form {
+    margin-top: 30px;
+  }
+  .cont__form form {    
+    flex-direction: column;
+    input,
+    button {
+      width: 100%;
+    }
+  }
 }//991
 
 @media (max-width : 767px) {
@@ -326,6 +391,19 @@
   .banner__text {
     font-size: 40px;
   }
+  .cont__title {
+    padding: 20px;
+  }
+  .cont__w {
+    gap: 20px;
+  }
+  .cont__txt {
+    margin: 30px 0;
+    max-width: 100%;
+  }
+  .about__col {
+    width: 100%;
+  }
 }//767
 
 @media (max-width : 640px) {
@@ -342,6 +420,28 @@
   .banner__text {
     font-size: 33px;
   }
+  .career__item__cont {
+    width: 100%;
+  }
+  .career__item {    
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 31px 26px 30px 26px;
+  }
+  .career__cont {    
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .career__address {
+    margin-right: 0;
+  }
+  .cont__title {
+    width: 100%;
+  }
+  .cont__txt {
+    font-size: 18px;
+  }
 
 }//640
 
@@ -350,7 +450,15 @@
     flex-direction: column;    
     align-items: flex-start;
   } 
-  
+  h1 {
+    font-size: 27px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 17px;
+  }
 }//575
 
 @media (max-width : 480px) {
@@ -371,6 +479,14 @@
   }
   .header__col {
     margin-top: 70px;
+  }
+  .prices__form-wrap {    
+    flex-direction: column;
+    gap: 10px;
+    input {
+      width: 100%;      
+      border-radius: 100px !important;
+    }
   }
 }//480
 
