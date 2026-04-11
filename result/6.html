@@ -25,8 +25,9 @@
   <div class="wrapper">
     <header>
   <div class="top ">
+    <div class="top__wrap" data-aos="fade-down" data-aos-delay="100" data-aos-duration="750">
     <div class="contain">
-      <div class="top__row" >
+      <div class="top__row">
         <a href="./index.html" class="logo">
           <img src="img/logo-inv.svg" class="logo-img--inv">
           <img src="img/logo.svg" class="logo-img">
@@ -81,15 +82,16 @@
       </div>
     </div>
   </div>
+</div>
 </header>
     <main class="main">     
       <section class="banner">
     <div class="banner__contain contain">
   <div class="banner__content">
-      <div class="banner__text">
+      <div class="banner__text" data-aos-duration="750" data-aos="fade-down" data-aos-delay="200">
         Heavy and Oversized Transports in Germany and Europe
       </div>
-      <div class="banner__bread">
+      <div class="banner__bread" data-aos-duration="750" data-aos="fade-down" data-aos-delay="300">
         <ul><li><a href=''>Main</a></li><li><a href=''>Service</a></li><li>Heavy and Oversized Transports in Germany and Europe</li></ul>
       </div>
     </div>
@@ -98,12 +100,12 @@
 </section>
       <section class="s-content section">
        <div class="contain">
-        <div class="content__row">
+        <div class="content__row" data-aos-duration="750" data-aos="fade-up" data-aos-delay="300">
           <div class="content__l">
             <div class="h2">TRANSPORT EUROPE</div>
             <ul>
               <li>
-                <a href="">Heavy and Oversized Transports in Germany and Europe</a>
+                <a class="active" href="">Heavy and Oversized Transports in Germany and Europe</a>
               </li>
               <li><a href="">Road Freight Germany</a></li>
               <li><a href="">Customs warehouse in Germany</a></li>
@@ -175,7 +177,7 @@
             </div>
             <h3>Advantages</h3>
             <div class="blocks__row">
-    <div class="blocks__item"  data-aos-duration="750" data-aos="fade-up" data-aos-delay="100">
+    <div class="blocks__item" data-aos-duration="750" data-aos="fade-up" data-aos-delay="100">
       <div class="advants__icon">
         <img src="./img/advants-1.svg" alt="">        
       </div>
@@ -222,8 +224,8 @@
 
   </main>
   <footer class="footer">  
-  <div class="contain">
-    <div class="footer__top" data-aos-duration="750" data-aos="fade-up" data-aos-delay="100">
+  <div class="contain" data-aos-duration="750" data-aos="fade-up" data-aos-delay="100">
+    <div class="footer__top">
       <a href="./index.html" class="f__logo">
         <img src="./img/f-logo.svg" alt="">
       </a>
@@ -239,7 +241,7 @@
         <a href=""><img src="./img/f-tg.svg" alt=""></a>
       </div>
     </div>
-    <div class="copy" data-aos-duration="750" data-aos="fade-down" data-aos-delay="300">
+    <div class="copy">
       Copyright © 2025  Express Solutions – Alle Rechte vorbehalten
     </div>
   </div>
@@ -254,7 +256,9 @@
 <script src="js/jquery.fancybox.min.js"></script>
 <script>
  document.addEventListener('DOMContentLoaded', ()=> {
-   AOS.init();     
+   AOS.init({
+    once: true
+   });     
  }) 
 </script>
 <script src="js/common.js"></script>

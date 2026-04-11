@@ -25,8 +25,9 @@
   <div class="wrapper">
     <header>
   <div class="top ">
+    <div class="top__wrap" data-aos="fade-down" data-aos-delay="100" data-aos-duration="750">
     <div class="contain">
-      <div class="top__row" >
+      <div class="top__row">
         <a href="./index.html" class="logo">
           <img src="img/logo-inv.svg" class="logo-img--inv">
           <img src="img/logo.svg" class="logo-img">
@@ -81,15 +82,16 @@
       </div>
     </div>
   </div>
+</div>
 </header>
     <main class="main">     
       <section class="banner">
     <div class="banner__contain contain">
   <div class="banner__content">
-      <div class="banner__text">
+      <div class="banner__text" data-aos-duration="750" data-aos="fade-down" data-aos-delay="200">
         Career
       </div>
-      <div class="banner__bread">
+      <div class="banner__bread" data-aos-duration="750" data-aos="fade-down" data-aos-delay="300">
         <ul><li><a href=''>Main</a></li><li>Career</li></ul>
       </div>
     </div>
@@ -98,7 +100,7 @@
 </section>
       <section class="s-content section">
        <div class="contain">
-        <div class="article__row">
+        <div class="article__row" data-aos-duration="750" data-aos="fade-up" data-aos-delay="300">
           <div class="article__l">
             <div class="career__item-w">
               <div class="career__item">
@@ -158,8 +160,8 @@
 
           </main>
           <footer class="footer">  
-  <div class="contain">
-    <div class="footer__top" data-aos-duration="750" data-aos="fade-up" data-aos-delay="100">
+  <div class="contain" data-aos-duration="750" data-aos="fade-up" data-aos-delay="100">
+    <div class="footer__top">
       <a href="./index.html" class="f__logo">
         <img src="./img/f-logo.svg" alt="">
       </a>
@@ -175,7 +177,7 @@
         <a href=""><img src="./img/f-tg.svg" alt=""></a>
       </div>
     </div>
-    <div class="copy" data-aos-duration="750" data-aos="fade-down" data-aos-delay="300">
+    <div class="copy">
       Copyright © 2025  Express Solutions – Alle Rechte vorbehalten
     </div>
   </div>
@@ -190,7 +192,9 @@
 <script src="js/jquery.fancybox.min.js"></script>
 <script>
  document.addEventListener('DOMContentLoaded', ()=> {
-   AOS.init();     
+   AOS.init({
+    once: true
+   });     
  }) 
 </script>
 <script src="js/common.js"></script>

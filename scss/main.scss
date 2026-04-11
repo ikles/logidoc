@@ -158,6 +158,7 @@ p {
 
 .top {
   position: relative;
+  z-index: 3;
 }
 .top__row {
   display: flex;  
@@ -192,8 +193,12 @@ p {
   .logo-img {}
 }
 
+.top__wrap {
+  width: 100%;
+}
 
 .top__mnu {
+  opacity: 1 !important;
   ul {
     display: flex;
     align-items: center;
@@ -993,14 +998,17 @@ input[type="submit"] {
         font-weight: 400;
         font-size: 20px;
         line-height: 1.5;
-        text-decoration: underline;
+        text-decoration: none;
         text-decoration-skip-ink: none;
         color: #004539;
+        &.active {
+          text-decoration: underline;
+        }
         @media (any-hover: hover) {
           &:hover {
-            text-decoration: none;
+            text-decoration: underline;
           }
-        }
+        }        
       }
     }
   }
@@ -1133,7 +1141,7 @@ input[type="submit"] {
 .accordion-content {
   display: none;
   &.open-content {
-    display: block;
+    /*display: block;*/
   }
 }
 
