@@ -44,24 +44,11 @@ jQuery(document).ready(function( $ ) {
 
   
 
-
-/************************************/
-
-/*  $('.wrapper').prepend('<span class="eye-3"></span>');
-  const url = window.location.href;
-  const match = url.match(/(\d+-?\d*)\.html$/);
-  const pg = match[1];
-  $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
-  $('body:not(.active)').css('background-image', "unset");
-
-  $('.eye-3').click(function (e) {
-    e.preventDefault();  
-    $('body').toggleClass('active');    
-    $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
-    $('body:not(.active)').css('background-image', "unset");
-  });*/
-
-/************************************/
+  $('.top__search').click(function (e) {
+    e.preventDefault();
+    $('.top-search__form').toggleClass('show');
+    $(this).toggleClass('close');
+  });
 
   function popup(openLink, windowEl, closeEl) {  
     $(openLink).click(function(e) {
@@ -84,28 +71,11 @@ jQuery(document).ready(function( $ ) {
     
   }
 
-  popup('.link2', '.modal-overlay_2', '.modal-close_2');
-  popup('.link', '.modal-overlay_1', '.modal-close_1');
+  popup('.top__btn', '.modal-overlay_1', '.modal-close_1');
+  //popup('.link2', '.modal-overlay_2', '.modal-close_2');
 
 
-  $('a[href*=\\#]:not([href=\\#])').click(function () {
-    elementClick = $(this).attr("href");
-    destination = $(elementClick).offset().top;
-    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 85}, 1100);
-    return false;
-  });
 
-
-  $(window).scroll(function(){
-    var wt = $(window).scrollTop();  
-    var wh = $(window).height();    
-    if (wt > 600) {
-      $('.serv-arr-up').show(400);
-    }
-    else {
-     $('.serv-arr-up').hide();
-   }
- });
 
   if($('select').length) {
     $('select').each(function () {

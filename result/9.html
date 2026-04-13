@@ -33,7 +33,7 @@
           <img src="img/logo.svg" class="logo-img">
         </a>
         <div class="header__col">
-          <div class="top__mnu">
+          <div class="top__mnu">            
             <ul>
               <li class="parent">
                 <a href="">Services</a>
@@ -68,6 +68,9 @@
               </li>
               <li><a href="">Contact</a></li>            
             </ul>
+            <form class="top-search__form">
+              <input type="text" placeholder="Search">
+            </form>
           </div>
           <a href="" class="top__search"></a>
 
@@ -88,9 +91,9 @@
       <section class="banner">
     <div class="banner__contain contain">
   <div class="banner__content">
-      <div class="banner__text" data-aos-duration="750" data-aos="fade-down" data-aos-delay="200">
+      <h1 class="banner__text" data-aos-duration="750" data-aos="fade-down" data-aos-delay="200">
         Title Article
-      </div>
+      </h1>
       <div class="banner__bread" data-aos-duration="750" data-aos="fade-down" data-aos-delay="300">
         <ul><li><a href=''>Main</a></li><li><a href=''>Blog</a></li><li>Title Article</li></ul>
       </div>
@@ -134,27 +137,27 @@
           <div class="article__r">
 
             <div class="h3 article__l-title">Other Posts</div>
-            <div class="article__item">
+            <a href="" class="article__item">
               <div class="article__img"><img src="./img/other-1.jpg"></div>
               <div class="article__name-w">
                 <div class="article__date">17 May 2026</div>
                 <div class="h3">Title Article</div>
               </div>
-            </div>
-            <div class="article__item">
+            </a>
+            <a href="" class="article__item">
               <div class="article__img"><img src="./img/other-2.jpg"></div>
               <div class="article__name-w">
                 <div class="article__date">17 May 2026</div>
                 <div class="h3">Title Article</div>
               </div>
-            </div>
-            <div class="article__item">
+            </a>
+            <a href="" class="article__item">
               <div class="article__img"><img src="./img/other-3.jpg"></div>
               <div class="article__name-w">
                 <div class="article__date">17 May 2026</div>
                 <div class="h3">Title Article</div>
               </div>
-            </div>
+            </a>
             <div class="article__work">
               <div class="h3">Do you want to work width us?</div>
               <p class="">Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.</p>
@@ -188,7 +191,25 @@
       Copyright © 2025  Express Solutions – Alle Rechte vorbehalten
     </div>
   </div>
-</footer>    
+</footer>
+
+<div class="modal-overlay modal-overlay_1">        
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block">     
+    <span class="modal-close modal-close_1"></span>
+    <div class="modal-form__inner">
+      <h2>Do you want to work with us?</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos odit officiis sed </p>
+      <form>
+  <input type="text" placeholder="First name">
+  <input type="text" placeholder="Last name">
+  <input type="text" placeholder="Email" required>
+  <input type="text" placeholder="Phone" required>
+  <input type="submit" value="Submit">        
+</form>
+    </div>
+  </div>
+    </div><!--modal-overlay-->    
 </div>
 <!--wrapper-->
 

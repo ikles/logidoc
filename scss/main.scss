@@ -54,7 +54,7 @@ body {
   position: relative;
   min-height: 100vh;
   &.ohi {
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
 }
 
@@ -105,7 +105,10 @@ p {
   overflow-y: scroll;
   z-index: 5;  
   display: none;
-  background: rgba(45, 40, 40, 0.5);
+  background: rgba(45, 40, 40, 0.9);
+  &_1 {
+    
+  }
 }
 
 .modal-form__layout {
@@ -122,13 +125,22 @@ p {
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 6;   
-  width: 555px; 
+  width: 100%;
+  max-width: 450px; 
   background-color: #FFF;
   min-height: 100px;
+  padding: 30px;   
+  padding-top: 40px;
+  border-radius: 10px;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .modal-form__inner {
-  position: relative;  
+  position: relative; 
 }
 
 .modal-close {
@@ -140,7 +152,7 @@ p {
   z-index: 7;
   width: 24px;
   height: 24px;
-  background: url("../img/close-w.svg") no-repeat 0 0;
+  background: url("../img/close.svg") no-repeat 0 0;
 }
 
 /*end modal*/
@@ -198,7 +210,9 @@ p {
 }
 
 .top__mnu {
-  opacity: 1 !important;
+  position: relative;
+  display: flex;  
+  align-items: center;
   ul {
     display: flex;
     align-items: center;
@@ -224,8 +238,8 @@ p {
       span.carret {
         display: inline-flex;
         margin-left: 8px;
-        width: 10px;
-        height: 15px;
+        width: 12px;
+        height: 6px;
         background-image: url("../img/arr-dw-mn-wh.svg");          
         background-repeat: no-repeat;
         background-position: center center;
@@ -277,6 +291,27 @@ p {
   width: 24px;
   height: 24px;
   margin-left: 16px;
+  &.close {    
+    background-size: 26px;
+    background-image: url("../img/close.svg");
+  }
+}
+
+form.top-search__form {
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;    
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  input {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .head__r {
@@ -402,6 +437,9 @@ p {
    }
    .top__search {
     background-image: url("../img/search.svg");
+    &.close {
+      background-image: url("../img/close-wh.svg");
+    }
   }
   .top__btn {
     background-color: #FFF;
@@ -752,6 +790,7 @@ input[type="text"] {
 }
 
 input[type="submit"] {
+  border: none;
   background: #004539;
   border-radius: 100px;
   width: 100%;
@@ -1290,6 +1329,9 @@ input[type="submit"] {
   display: flex;
   gap: 10px;
   align-items: center;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .article__img {
@@ -1463,6 +1505,9 @@ blockquote {
 
 .career__address {
   margin-right: 95px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #004539;
 }
 
 .career__phone {
@@ -1613,7 +1658,7 @@ blockquote {
   margin-bottom: 31px;
   ul {
     display: flex;
-    gap: 7px;
+    gap: 20px;
     flex-wrap: wrap;
     align-items: center;    
     justify-content: center;
